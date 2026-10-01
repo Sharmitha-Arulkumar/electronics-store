@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    /* Smooth transition backgrounds switching automatically based on class state entries */
+    @apply bg-slate-50 text-slate-900 transition-colors duration-300 antialiased font-sans;
+  }
+}
