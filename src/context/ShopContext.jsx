@@ -14,7 +14,7 @@ export const ShopProvider = ({ children }) => {
     const fetchTechProducts = async () => {
       try {
         // Correct target endpoint added (/products/category/electronics)
-        const response = await fetch("https://fakestoreapi.com/users");
+        const response = await fetch("https://jsonfakery.com/products");
 
         if (!response.ok) {
           throw new Error(
